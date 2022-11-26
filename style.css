@@ -1,0 +1,330 @@
+* {
+    font-family: 'Graphik';
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('font/Graphik-Regular.woff2') format('woff2'),
+        url('font/Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('font/Graphik-Light.woff2') format('woff2'),
+        url('font/Graphik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('font/Graphik-Medium.woff2') format('woff2'),
+        url('font/Graphik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(74, 78, 66);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+    background: rgba(167, 141, 214, 0.788);
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 80%;
+
+
+
+}
+
+.container aside {
+
+    background: #4C52BB;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    position: relative;
+    border-radius: 30px 0 0 30px;
+}
+
+aside img {
+    margin: 40px 0 20px 40px;
+    border-radius: 50rem;
+    width: 50px;
+}
+
+.container aside .aside-text ul li {
+    padding: 20px 20px 20px 40px;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+.container aside .aside-text ul li:nth-child(1):hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .001));
+    transition: 1s all ease;
+
+}
+
+.container aside .aside-text ul li:nth-child(2):hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .001))
+}
+
+.container aside .aside-text ul li:nth-child(3):hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .001))
+}
+
+.container aside .aside-text ul li:nth-child(4):hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .001))
+}
+
+.container aside .aside-text ul li:nth-child(5):hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, .1), rgba(255, 255, 255, .001))
+}
+
+aside .aside-bot {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    column-gap: 10px;
+    color: white;
+    padding: 20px;
+
+
+}
+
+.aside-bot span {
+    margin-left: 70px;
+    font-size: small;
+    color: rgba(255, 255, 255, .6);
+}
+
+.aside-bot a {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, .5));
+    width: 220px;
+    height: 7px;
+    position: inherit;
+    bottom: 0;
+    border-radius: 30rem;
+}
+
+.container .main {
+    background: white;
+    height: auto;
+    width: 60%;
+    padding: 40px 40px 0 40px;
+}
+
+.container .main .sbar {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.container .main .sbar input {
+    width: 300px;
+    border: none;
+    outline: 0;
+    background-color: #F6F8FA;
+    padding: 15px;
+    padding-left: 40px;
+    border-radius: 50rem;
+}
+
+.container .main .sbar input::placeholder {
+    color: gray;
+    font-size: 18px;
+}
+
+.container .main .sbar i {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: gray;
+}
+
+.main .title {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    border-bottom: 2px solid rgba(124, 122, 122, 0.411);
+
+}
+
+.main .title p {
+    color: gray;
+}
+
+.main .title i {
+    margin-left: 10px;
+    color: gray;
+}
+
+.main-box {
+    display: flex;
+    column-gap: 20px;
+}
+
+.box {
+    background-color: #F6F8FA;
+    border-radius: 30px;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    position: relative;
+    margin: 40px 0 30px 0;
+
+}
+
+.box h4 {
+    margin-bottom: 10px;
+}
+
+.box img {
+    width: 30px;
+    margin-bottom: 30px;
+
+}
+
+.box img:nth-child(2) {
+    margin-left: 200px;
+}
+
+.box p {
+    color: rgb(20, 149, 235)
+}
+
+.box span {
+    display: block;
+    margin-top: 10px;
+    margin-left: 200px;
+    color: rgb(20, 149, 235)
+}
+
+.box a {
+    background: linear-gradient(to right, rgb(23, 7, 236), rgba(20, 149, 235, 0.5));
+    width: 270px;
+    height: 7px;
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    border-radius: 30rem;
+}
+
+.bos-box {
+    border: 3px dashed #e0eaf5;
+    border-radius: 30px;
+    width: 300px;
+    height: 140px;
+    padding: 20px;
+    margin: 40px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.bos-box a {
+    background: #F6F8FA;
+    padding: 12px 20px;
+    border-radius: 30rem;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(20, 149, 235);
+
+}
+
+.main .recent-text {
+    overflow: auto;
+    max-height: 260px;
+}
+
+.recent-text .r-text {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 75px;
+    background: #F6F8FA;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.risde {
+    background: white;
+    width: 300px;
+    border-left: 2px solid rgba(124, 122, 122, 0.205);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 0 30px 30px 0 ;
+}
+
+.risde .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 184px;
+    column-gap: 10px;
+
+}
+
+.risde-text {
+
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgba(124, 122, 122, 0.205);
+    position: relative;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.rside-b {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border: 2px solid rgba(124, 122, 122, 0.205);
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+.rside-b h1 {
+    margin-bottom: 20px;
+}
